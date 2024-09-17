@@ -1,0 +1,14 @@
+.video-container {
+    max-width: 100%;
+    margin: 20px auto; /* Center the container and add vertical margin */
+    text-align: center;
+}
+
+video {
+    width: 1300px; /* Set fixed width */
+    height: 555px; /* Set fixed height */
+    border: 2px solid #000;
+    border-radius: 8px;
+    box-sizing: border-box; /* Include border in the element's total width and height */
+    display: inline-block; /* Ensure the video is treated as an inline element */
+}

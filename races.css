@@ -1,0 +1,60 @@
+.races {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Адаптивна сітка */
+    gap: 30px; /* Збільшено відступ між картками */
+    padding: 30px; /* Збільшено відступ навколо сітки */
+}
+
+.race {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 12px; /* Збільшено округлення */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 10px; /* Додано внутрішні відступи */
+}
+
+.race:hover {
+    transform: scale(1.07); /* Збільшено ефект при наведенні */
+}
+
+.race img {
+    width: 150px; /* Задано ширину зображення */
+    height: 150px; /* Задано висоту зображення */
+    object-fit: cover; /* Це забезпечує, що зображення покриває зазначені розміри без спотворення */
+    border-bottom: 2px solid #ffcc00;
+    margin-bottom: 10px; /* Збільшено відступ під зображенням */
+}
+
+.race-info {
+    padding: 20px;
+}
+
+.race-info h2 {
+    color: #ffcc00;
+    margin-bottom: 15px; /* Збільшено відступ під заголовком в картці */
+}
+
+.race-info p {
+    color: #dddddd;
+}
+
+/* Центрування колонок */
+.race-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Збільшено відступ між картками у колонках */
+}
+
+/* Стилізування заголовків для рас Орди і Альянсу */
+.horde-header {
+    color: #ff0000; /* Червоний для Орди */
+}
+
+.alliance-header {
+    color: #0000ff; /* Синій для Альянсу */
+}
+
+
+
+
+

@@ -1,0 +1,81 @@
+html, body { 
+    height: 0%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-image: url('https://images.noob-club.ru/news/2019/09/g6of0vpbes.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.6); /* Black tint for darkening */
+    background-blend-mode: darken; /* Blend the background image with black color */
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Темний фон */
+    color: #ffcc00; /* Колір тексту */
+    padding: 20px; /* Внутрішні відступи */
+    text-align: center; /* Вирівнювання тексту по центру */
+    min-height: 100px; /* Мінімальна висота для шапки */
+    box-sizing: border-box; /* Включення padding у загальну висоту елемента */
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+.wow-style {
+    color: #ffcc00; /* Золотий колір тексту */
+    font-family: 'Morpheus', 'Arial', sans-serif; /* Спроба використати WoW шрифт */
+    font-size: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Тінь для тексту, схожа на стилістику WoW */
+    background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий темний фон */
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ffcc00; /* Золота рамка */
+    text-align: center; /* Вирівнювання тексту по центру */
+}
+
+
+
+main {
+    padding: 20px;
+    color: #ffffff;
+    min-height: 100vh; /* Ensure content height is enough to scroll */
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(100%); /* Hide the footer initially */
+    transition: transform 0.3s ease; /* Smooth transition for showing the footer */
+}
+
+footer.visible {
+    transform: translateY(0); /* Make sure it translates back to its correct position */
+}
